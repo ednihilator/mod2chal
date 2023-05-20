@@ -1,0 +1,21 @@
+.root{
+  --lightblue: rgb(172, 172, 255);
+}
+body{
+  background-color: rgb(60, 60, 90);
+  font-size: 20px;
+}
+
+header{
+  font-size: 3rem;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(172, 172, 255);
+}
+nav{
+  color: var(--lightblue);
+  font-size: 1.5rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: white;
+  max-width: fit-content;
+  padding: 3px 50px;
+}
