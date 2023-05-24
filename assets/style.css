@@ -7,9 +7,13 @@ body{
   background-color: rgb(60, 60, 90);
   font-size: 20px;
 }
+main{
+  display:flex;
+  flex-wrap:wrap
+}
 p{
   color: white;
-  line-height: 2px;
+  line-height: 20px;
   padding: 4px;
 }
 
@@ -22,7 +26,7 @@ header{
 }
 
 a{
-  color: gray;
+  color: rgb(40, 47, 80);
   font-size: 1.5rem;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-decoration: none;
@@ -30,23 +34,26 @@ a{
 nav{
   display: inline;
   flex-direction: row;
-  color: gray;
   font-size: 1.5rem;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   background-color: white;
   max-width: fit-content;
   padding: 3px 50px;
   margin: 10px; 
-  transition-property: color, background-color;
-  transition-duration: 0.5s;
+  /* transition-property: color, background-color;  */
+  
 }
 nav:hover {
-  color:white;
+  transition-duration: 0.5s;
   background-color: var(--backcolor);
-  
+}
+a:hover{
+  color:white;
+  transition-duration: 0.5s;
 }
 /* nav:active{
   background-color: black;
+  color:white;
 }  */
 
 #contact-block{
@@ -54,14 +61,70 @@ nav:hover {
   font-family: 'Times New Roman', Times, serif;
   color:white;
 }
-.image-block{
-  display:block;
-  /* flex-direction: column; */
+.image-me{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 100%;
 }
+.image-me img{
+  max-width: 100%;
+  width: 300px;
+  margin: 10px;
+}
+.image-block{
+  display:flex;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 100%;
+  /* height: 500px; */
+  /* flex-direction: column; */
+
+}
+.image-block img{
+  height: 400px;
+  max-width: 100%;
+  width: 600px;
+  margin: 10px;
+}
+
+#image-header {
+  display:inline;
+  flex-direction: row;
+}
+#about{
+  /* display:flex;
+  flex-wrap: wrap; */
+  font-family: 'Times New Roman', Times, serif;
+  font-weight:lighter;
+}
+#image-header img{
+  height: 600px;
+  max-width: 100%;
+  width: 900px;
+  margin: 10px;
+}
+
+/* .image-resizer{
+  max-width: 100%;
+  width: 600px;
+  height: 500px; 
+  border-width: 10px;
+  border-color: black;
+}  */
 
 footer{
   text-align: center;
   color:black;
   height: 20px;
   margin-bottom:0px;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 900px) {
+main,
+  nav {
+    flex-direction: column;
+  }
 }
