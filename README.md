@@ -1,12 +1,6 @@
 # mod2chal
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
 
 Motivation behind this project was to make something from scratch utliziing everything we had learned. This project was made to show what I had learned so far in the classes, and to bring attention to any weak points in my learning so far. I learned that labeling a div with a class/id has to match the element's class/id correctly, how to resize images. 
 
@@ -21,9 +15,8 @@ Provide instructions and examples for use. Include screenshots as needed.
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+    
+    ![screenshot](assets/images/screenshot.png)
 
 
 ## License
